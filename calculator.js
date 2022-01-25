@@ -8,6 +8,9 @@ const app = express()
 app.use(bodyParser.urlencoded({extended: true}))
 const port = 3000
 
+//load our css styles 
+app.use(express.static(__dirname + '/style.css'));
+
 //create a get request that responds with the index.html file
 app.get('/', function(request, response) {
     response.sendFile(__dirname + '/index.html')

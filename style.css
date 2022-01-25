@@ -8,3 +8,6 @@ button {
     top: 50px;
     right: 310px;
 }
+form {
+    padding: 2px solid red;
+}
